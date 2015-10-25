@@ -17,10 +17,10 @@ To create hypertext, you need to take regular text and mark it up. That’s what
 
 Save it as a .html file and that’s it, you’ve created HTML! All the content and elements for any thing we make will live inside this framework. 
 
-##### <head> tag
+##### ‘<head>’ tag
 This is where all the setup information about the document lives. We’ll add more to this part of the document later. Do not confuse this with the document’s header. 
 
-##### <body> tag
+##### ‘<body>’ tag
 This is literally the “body” of the document. It’s where all the content lives. 
 
 ##### HTML tags
@@ -58,25 +58,25 @@ An ID is a unique name for a specific HTML tag. If you have a logo image on a pa
 ##### Basic HTML tags you just need to memorize
 There are a few tags that you will use A LOT, so we’re going to get them out of the way here.
 
-###### <div>
+###### ‘<div>’
 The div tag is the most used tag in modern web layouts. It defines a container (think a square area) that you put text and other tags in. You can use it to create basic rectilinear shapes, but it’s most often used as a container. 
 
 	<div>
 		Here is some stuff inside a this div. 
 	</div>
 
-###### <p> (Paragraph)
+###### ‘<p>’ (Paragraph)
 The paragraph tag is very similar to the <div> tag, but it has some padding built into it to make text readable. You use it to break up paragraphs of text. 
 
 	<p>
 		World’s shortest paragraph.
 	</p>
 
-###### <a> (Anchor)
+###### ‘<a>’ (Anchor)
 The anchor tag makes hyperlinks, what most people just call links. This is an important distinction to make because there is a link tag and it links code together. If you’re having a hard time keeping them straight, just think about this tag creating “*a* link.” This tag has an important attribute to memorize, mainly the destination of where the hyperlink leads to. That attribute is called “href” which stands for hyperlink-reference and you’re just going to have to live with the name that doesn’t make sense anymore. 
 
 	<a href=“http://www.codelikeadesigner.com”> some link text </a>
-###### <img> (Image)
+###### ‘<img>’ (Image)
 The image tag thankfully does exactly what it’s name implies, it places an image in your page. It even has two friendly named attribute that you need to remember: src (source of the image aka where the image file is) and alt (the alternate text to display if the image can’t be loaded.) Remember that image tags are self-closing.
 
 	<img src=“someGif.gif” alt=“this is a gif of kitties”/>
@@ -137,7 +137,7 @@ For the most part, between element, class, and ID styles you will be able to cre
 You can read more about special selectors here, but if they are confusing to you right now, don’t worry about it. It will all make sense soon.
 
 ##### Linking the files together
-Remember when I said there was a link tag that links files together? That’s the tag we use to get our CSS to actually manipulate our HTML. The link tag has three attributes to remember: 
+Remember when I said there was a link tag that links files together? That’s the tag we use to get our CSS to actually manipulate our HTML. The ‘<link>’ tag has three attributes to remember: 
 * src —— the location of the css file
 * rel —— the relevance of the link to this HTML document. This will always be “stylesheet” when we’re linking stylesheets. 
 * type —— the type of the file we’re linking to, this will always be “text/css” when we’re linking stylesheets.
@@ -157,7 +157,7 @@ From our basic HTML document before we will add one line:
 #### Scalable Vector Graphics (SVG)
 While you could just use HTML, CSS and some image files to create and style your pages, image files can be large, and they don’t always scale well. SVG lets you create fairly simple images in web-native code, that load faster and resize well in most modern web browsers. You’ll see some SVG in the examples, and sometimes the best way to create a complicated SVG is to use a tool like Adobe Illustrator or Sketch, and paste the code into your HTML. 
 
-For now, all you really need to know is that SVG drawing instructions live inside the <svg>, are formatted like HTML, and mostly get styled using the same CSS as HTML. 
+For now, all you really need to know is that SVG drawing instructions live inside the ‘<svg>’, are formatted like HTML, and mostly get styled using the same CSS as HTML. 
 
 
 That’s it for the technology basics, let’s talk about the design basics we need to know. 
