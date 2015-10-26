@@ -66,25 +66,29 @@ The div tag is the most used tag in modern web layouts. It defines a container (
 	</div>
 
 ###### `<p>` (Paragraph)
-The paragraph tag is very similar to the <div> tag, but it has some padding built into it to make text readable. You use it to break up paragraphs of text. 
+The paragraph tag is very similar to the `<div>` tag, but it has some padding built into it to make text readable. You use it to break up paragraphs of text. 
 
 	<p>
 		World’s shortest paragraph.
 	</p>
 
 ###### `<a>` (Anchor)
-The anchor tag makes hyperlinks, what most people just call links. This is an important distinction to make because there is a link tag and it links code together. If you’re having a hard time keeping them straight, just think about this tag creating “*a* link.” This tag has an important attribute to memorize, mainly the destination of where the hyperlink leads to. That attribute is called “href” which stands for hyperlink-reference and you’re just going to have to live with the name that doesn’t make sense anymore. 
+The anchor tag makes hyperlinks, what most people just call links. This is an important distinction to make because there is a link tag and it links code together. If you’re having a hard time keeping them straight, just think about this tag creating “*a* link.” This tag has an important attribute to memorize, mainly the destination of where the hyperlink leads to. That attribute is called “href” which stands for hypertext-reference and you’re just going to have to live with the name that doesn’t make sense anymore. 
 
 	<a href=“http://www.codelikeadesigner.com”> some link text </a>
 ###### `<img>` (Image)
-The image tag thankfully does exactly what it’s name implies, it places an image in your page. It even has two friendly named attribute that you need to remember: src (source of the image aka where the image file is) and alt (the alternate text to display if the image can’t be loaded.) Remember that image tags are self-closing.
+The image tag, thankfully, does exactly what it’s name implies, it places an image in your page. It even has two friendly named attribute that you need to remember: 
+* src —— source of the image aka where the image file is
+* alt —— the alternate text to display if the image can’t be loaded. 
+
+Remember that image tags are self-closing.
 
 	<img src=“someGif.gif” alt=“this is a gif of kitties”/>
 
 There are a lot more tags, but we’ll cover them as we’re talking about different design techniques. 
 
 #### Cascading Style Sheets (CSS)
-Because nothing in this world is easy, you can’t just use HTML to create a website anymore. If you want to make it look like more than just text on a page, you have to use another programming language to do that (actually, you have to use more than one.) CSS is the language of styles. While you can put your  CSS into your HTML file, that is generally frowned upon, and so we’re going to just put ours into a separate file. Creating a CSS file is really easy. Create a new text file and then add:
+Because nothing in this world is easy, you can’t just use HTML to create a website anymore. If you want to make it look like more than just text on a page, you have to use another programming language to do that (actually, you have to use more than one.) CSS is the language of styles. While you can put your  CSS into your HTML file, that is generally frowned upon. So we’re going to just put ours into a separate file. Creating a CSS file is really easy. Create a new text file and then add:
 	
 	@charset “utf-8”;
 
@@ -93,7 +97,7 @@ Save it as a .css file and that’s it! You have a blank style sheet.
 ##### CSS styles
 Like HTML has tags, CSS has styles. Unfortunately CSS styles are nothing like HTML tags, but all styles follow a basic format
 
-	element-selector{
+	selector{
 		property: value;
 		property: value;
 	}
@@ -107,7 +111,7 @@ Element styles effect an HTML tag. You just use the html tag you want to style, 
 		property: value;
 	} 
 
-This style will effect every <div> element in your document. 
+This style will effect every `<div>` element in your document. 
 
 ###### Class Styles
 Sometimes you don’t want to style every instance of a specific tag in a document…like most times. A class style lets you create a style that can be applied to multiple tags, as long as they are part of that “class.” Think of a class like a group. To create a class style you give your class a name, and then put a . in front of it
@@ -121,14 +125,14 @@ This style will only apply to members of the my-awesome-class class.
 ###### ID Styles
 Sometimes you just want to style one unique thing, and nothing else. Those are the times you want to use an ID style. IDs are like names, there can only be one of them in your design. To create an ID style, you put a # before the ID you want to style
 
-#unique-ID{
-	property: value;
-}
+	#unique-ID{
+		property: value;
+	}
 
 This style will only apply to the one element with the ID “unique-ID.”
 
 ###### Special Selector styles
-For the most part, between element, class, and ID styles you will be able to create whatever you need for your design. However, sometimes you need to do some things that are a little wacky. Selectors make it easier to do that wacky stuff. This comes in most handy when you are styling elements that are going to be created by a computer algorithm and not you (it happens more often than you’d think.) CSS has a long list of special selectors that you can use to do some really cool things, like select the odd numbered things in a group. Most selectors start with : and they work just like all the other styles
+For the most part, between element, class, and ID styles you will be able to create whatever you need for your design. However, sometimes you need to do some things that are a little wacky. Special selectors make it easier to do that wacky stuff. This comes in most handy when you are styling elements that are going to be created by a computer algorithm and not you (it happens more often than you’d think.) CSS has a long list of special selectors that you can use to do some really cool things, like select the odd numbered items in a class. Most selectors start with : and they work just like all the other styles
 
 	:special-selector{
 		property: value;
@@ -157,7 +161,7 @@ From our basic HTML document before we will add one line:
 #### Scalable Vector Graphics (SVG)
 While you could just use HTML, CSS and some image files to create and style your pages, image files can be large, and they don’t always scale well. SVG lets you create fairly simple images in web-native code, that load faster and resize well in most modern web browsers. You’ll see some SVG in the examples, and sometimes the best way to create a complicated SVG is to use a tool like Adobe Illustrator or Sketch, and paste the code into your HTML. 
 
-For now, all you really need to know is that SVG drawing instructions live inside the `<svg>`, are formatted like HTML, and mostly get styled using the same CSS as HTML. 
+For now, all you really need to know is that SVG drawing instructions live inside the `<svg>` tag, are formatted like HTML, and mostly get styled using the same CSS as HTML. 
 
 
 That’s it for the technology basics, let’s talk about the design basics we need to know. 
@@ -175,23 +179,24 @@ The user-facing elements of modern software largely borrow the fundamental eleme
 #### Space
 Space is the entirety of the area of a composition, be it a piece of paper or the viewport in a web browser. We can divide space into two distinct kinds: positive and negative. Positive space is the space in a composition that has something in it. It is what most people think of when they think of graphic design, it’s the things on the page/screen. Negative space is all the empty space. Negative space is a crucial element in graphic design and should be considered just as carefully as the positive space in your compositions.
 #### Line
-A line is, at it’s most basic, the distance between two points. The first thing you probably think of when you think of a line is a solid mark with starting and an ending points, in graphic design speak “a rule”. Lines can also be made by arranging elements in such a way as to create the feeling of a continuous line, or you may leave a certain amount of blank space to create a line, like the gutters in-between panels in a comic book. Both of these uses are “implied lines” 
+A line is, at it’s most basic, the distance between two points. The first thing you probably think of when you think of a line is a solid mark with starting and an ending points, in graphic design speak “a rule”. Lines can also be made by arranging elements in such a way as to create the feeling of a continuous line, or you may leave a certain amount of blank space to create a line, like the gutters in-between panels in a comic book. Both of these uses are “implied lines.” 
 
 #### Shape
-A shape is a closed line, we know most shapes by their outlines, but shapes are more than just areas of value or color. Text, photographs and interactive elements are often arranged into and moved around a composition as shapes.
+A shape is, at it’s most basic, a closed line, We know most shapes by their outlines, but shapes are more than just areas of value or color. Text, photographs, and interactive elements are often arranged into and moved around a composition as shapes.
 
 #### Value
 Value is the measure of how light or dark something is on a scale from pure white to pure black. Everything in your composition has a value, including any colors you use. 
+
 #### Color
-As value is the measure of lightness or darkness, color is at it’s most basic a measure of hue; how red, green, blue, orange, yellow, indigo, or violet something is. When you think of a specific color you are likely thinking of a combination of value and hue that makes up that color. 
+As value is the measure of lightness or darkness, color is, at it’s most basic, a measure of hue; how red, green, blue, orange, yellow, indigo, or violet something is. When you think of a specific color you are likely thinking of a combination of value and hue that makes up that “color”. 
 
 #### Texture
-Texture is a tactile surface, or the impression of one. In digital design texture is most-often created by repeating patterns made of simple shapes or lines. Typography, illustrations, and photographs also add texture to a composition. 
+Texture is a tactile surface, or the impression of one. In digital design texture is most-often created by optical illusions, repeating patterns made of simple shapes or lines. Typography, illustrations, and photographs also add texture to a composition. 
 
 In addition to the fundamental elements of graphic design, when we’re designing for the web or native software platforms there are a few other fundamental elements specific to the medium: time and sound. 
 
 #### Time
-While traditional graphic design is focused on printed media, time does not play a key role outside of the sequence of individual pieces. When we change the medium to software, suddenly time becomes a key component of any design we create. Digital interfaces react to user input, move to reveal hidden elements or add emphasis, and are even assembled over time as opposed to being presented all at once. Like the other fundamental elements, the use of time should be considered very carefully in your designs. 
+Traditional graphic design is focused on printed media, time does not play a key role outside of the sequence of individual pieces. When we change the medium to software, suddenly time becomes a key component of any design we create. Digital interfaces react to user input, move to reveal hidden elements or add emphasis, and are even assembled over time as opposed to being presented all at once. Like the other fundamental elements, the use of time should be considered very carefully in your designs. 
  
 #### Sound
 	Graphic design is primarily visual. Current trends in computing make most interfaces primarily visual, although the use of sound to reenforce interactions (like the *click* most soft-keyboards make on most smartphones) that are primarily visual and add a sense of texture. As computing becomes more ubiquitous, sound is becoming more than just an element of texture, it is also becoming the primary interface. Consider carefully both the sounds your interface will make as well as the sounds your users will make in your designs.   
