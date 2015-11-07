@@ -16,7 +16,7 @@ Visual Unity is primarily what we’re concerned with here, and even a group of 
 The following techniques are ways to achieve Unity in your designs. 
 
 #### Order vs Chaos
-Like most things in design, and life, Unity is a force you must balance carefully against other characteristics of your design. Unity is in direct opposition with Variety, and too much of too little of either can have disastrous results. Too much Unity and a piece will feel mechanical, soulless, and boring. Things that are too unified tend to evoke people’s worst fears about conformity and a loss of individuality. Too much Variety and your piece will feel orderless, chaotic, jumped and random. Things with too much variety tend to evoke feelings of carelessness and lawlessness and generally feel “un-designed.” 
+Like most things in design, and life, Unity is a force you must balance carefully against other characteristics of your design. Unity is in direct opposition with Variety, and too much or too little of either can have disastrous results. Too much Unity and a piece will feel mechanical, soulless, and boring. Things that are too unified tend to evoke people’s worst fears about conformity and a loss of individuality. Too much Variety and your piece will feel orderless, chaotic, jumbled, and random. Things with too much variety tend to evoke feelings of carelessness and lawlessness and generally feel “un-designed.” 
 
 The challenge is to create Unity with enough Variety to not feel mechanical and boring, but still feel intentional and harmonious. Depending on what you’re trying to convey, your balance will change. 
 
