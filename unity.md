@@ -21,8 +21,30 @@ Like most things in design, and life, Unity is a force you must balance carefull
 The challenge is to create Unity with enough Variety to not feel mechanical and boring, but still feel intentional and harmonious. Depending on what you’re trying to convey, your balance will change. 
 
 ### How to achieve Unity
+For all of these examples we'll start off doing a classic 2d design exercise using a line, a square, and a circle. We'll create these shapes using some SVG markup. Here's how we do that.
+
+We start out by opening an SVG element
+
+	<svg>
+
+	</svg>
+
+All of our SVG shapes will live inside the SVG tags. So far pretty simple. Next that's draw a line.
+
+	<svg>
+		<line x1="0" y1="0" x2="100" y2="100">
+	</svg>
+
+The line tag lets us define a line to be drawn. The attributes are pretty simple once you know what they mean, x1 and y1 are the starting point from the top, left corner of the SVG element (in this case the top left corner of the screen.) x2 and y2 are the ending point. So here we've drawn a line that is staight up and down and 100 pixels tall.
 
 #### Proximity
+Maybe the easiest way to achieve unity in a piece is through the use of proximity. Grouping like things closer together makes them feel like they belong together. Similarly putting a lot of space between things that are not a like makes them feel seperate. On the web, there are a few different ways we can acheive these effects: margins, padding, positioning and 2d transforms. NOTE: Placement and positioning is one of the most finickey parts of CSS, and this is a place where things may not be identical across browsers. Don't sweat it as long as they are pretty close. More importantly, there are multiple positioning models you can use in CSS. If you're using the HTML and CSS Scaffold files I've provided, you are using the border-box positioning model. I chose this because it makes more sense, but it is sadly not default. If this don't make any sense to you right now, don't worry about it, just make sure all of your CSS files start off with the first definition that my scaffold does and it will always work this way. If you want to learn more about differnet positioning models you can do so here (link to article about positioning needed.)
+
+##### Margins
+Margins are the space between the outside of elements in a webpage. 
+##### Padding
+##### Positioning 
+##### Transform
 #### Repetition
 #### Continuation
 #### Continuity
