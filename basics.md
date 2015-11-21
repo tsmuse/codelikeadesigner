@@ -161,7 +161,7 @@ From our basic HTML document before we will add one line:
 #### Scalable Vector Graphics (SVG)
 While you could just use HTML, CSS and some image files to create and style your pages, image files can be large, and they don’t always scale well. SVG lets you create fairly simple images in web-native code, that load faster and resize well in most modern web browsers. You’ll see some SVG in the examples, and sometimes the best way to create a complicated SVG is to use a tool like Adobe Illustrator or Sketch, and paste the code into your HTML. 
 
-For now, all you really need to know is that SVG drawing instructions live inside the `<svg>` tag, are formatted like HTML, and mostly get styled using the same CSS as HTML. 
+For now, all you really need to know is that SVG drawing instructions live inside the `<svg>` tag, are formatted like HTML, and mostly get styled using the same CSS as HTML. Generally, we'll use something like Adobe Illustrator or Bohemian Coding's Sketch to create our SVG code, so we can draw these elements in a a way that is more like drawing than it is like coding. However, it's important to understand the basics of SVG because at some point you will have to troubleshoot or debug the code one of these programs generates for you.
 
 
 That’s it for the technology basics, let’s talk about the design basics we need to know. 
