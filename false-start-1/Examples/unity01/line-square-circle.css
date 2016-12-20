@@ -1,0 +1,60 @@
+@charset “utf-8”;
+
+/*
+ * Why is this here?  
+ * Because it's an example of how you do a comment in CSS
+*/ 
+
+/*
+ * Why is this here? 
+ * To allow us to use padding as the space inside an element and margins as the space around an element. 
+ * It makes much more sense than the default. The * selector just means we're applying this style to every element.
+*/ 
+*{
+	box-sizing:border-box;
+}
+
+/*
+ * Why is this here? 
+ * Set the base font size so all other sizes can be relative units. Set the primary typeface used in this document to be sans-serif
+ * because it's trendy. 
+*/
+html,body{
+	font-size: 16px; 
+	font-family: sans-serif;
+}
+
+/*
+ * Why is this here? 
+ * We put the SVG shape into a container, basically a box, so that we could move it around easily. These styles only impact the container 
+ * box, not the shape inside of it.
+*/
+#line-container{
+	margin-top: 100px;
+	margin-left:125px;
+}
+
+/*
+ * Why is this here? 
+ * This is the SVG shape itself. All the styles here modify the shape, but not it's container. 
+*/
+#line{
+	stroke-width:5px;
+}
+
+#square-container{
+	margin-top: -70px;
+
+}
+#square{
+
+}
+#circle-container{
+	margin-top: -130px;
+	margin-left:150px;
+
+}
+#circle{
+
+}
+

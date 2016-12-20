@@ -22,21 +22,38 @@
 html,body{
 	font-size: 16px; 
 	font-family: sans-serif;
-	color:black;
 }
 
+/*
+ * Why is this here? 
+ * We put the SVG shape into a container, basically a box, so that we could move it around easily. These styles only impact the container 
+ * box, not the shape inside of it.
+*/
 #line-container{
-
+	margin-top: 100px;
+	margin-left:125px;
 }
+
+/*
+ * Why is this here? 
+ * This is the SVG shape itself. All the styles here modify the shape, but not it's container. 
+*/
 #line{
 	stroke-width:5px;
 }
 
+#square-container{
+	margin-top: -70px;
 
+}
 #square{
 
 }
+#circle-container{
+	margin-top: -130px;
+	margin-left:150px;
 
+}
 #circle{
 
 }
